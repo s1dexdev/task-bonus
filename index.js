@@ -39,16 +39,16 @@ const calculationOfBonuses = (promoCode) => {
   if (pairsOfOddDigits.length < 2) {
     if (sumOfEvenDigits > sumOfOddDigits) {
       return 100;
-    } else {
-      return 0;
+    }
+     return 0;
     }
   } else {
     const arr = pairsOfOddDigits.flat();
 
     if (arr[0] < arr[1] && arr[arr.length - 2] < arr[arr.length - 1]) {
       return 2000;
-    } else {
-      return 1000;
+    }
+    return 1000;
     }
   }
 };
